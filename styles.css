@@ -52,7 +52,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #f0dbb0
 }
 
 #main-header {
@@ -83,9 +83,9 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
   width: 150px;
   height: 150px;
+  margin: 50px 25% 0;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
@@ -110,13 +110,17 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: #f1d0b1;
+  border: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #4f6a8f;
+}
+
+h2 {
+  color: #33455d;
 }
 
 ul.skills {
@@ -127,19 +131,22 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #efb680;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #9db0bc;
 }
 
 .about {
   text-align: center;
   margin: 0 15%;
+  background-color: #f1d0b1;
+  border-style: inset;
+
 } 
 
 .pets {
@@ -154,9 +161,23 @@ ul.skills {
 .pets p {
   background-color:aliceblue;
   border-style: dotted;
-  padding: 1em 2em;
+  padding: 1em 1em;
   margin: 0 15%;
+  background: #f1d0b1;
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
 
+.pets>p:hover {
+  border-color: #4f6a8f;
+}
+
+.pets > img {
+  width: 50%;
+  height: auto;
+  margin: 0 25%;
+  border-style: groove;
 }
 
 img {
@@ -164,6 +185,14 @@ img {
   height: auto;
   margin: 0 25% 0 15%;
   border-style: groove;
+}
+
+.card > img {
+  width: 50%;
+  height: auto;
+  margin: 0 25%;
+  border-style: groove;
+  
 }
 
 footer {
@@ -245,27 +274,42 @@ a.social:hover {
 
   .about {
     text-align: center;
-    margin: 0 15%;
+    margin: 0 35%;
   } 
 
   .pets {
     display:grid;
     grid-template-columns: .5fr .5fr;
-    grid-template-rows: .5fr .5fr .5fr .5fr;
+    grid-template-rows: .5fr .5fr;
     grid-gap: 1em;
     text-align: justify;
     padding: 1em 2em;
+    
+  }
+
+  .pets > p:hover {
+    border-color: #4f6a8f;
   }
 
   .pets p {
     background-color:aliceblue;
     border-style: dotted;
-    padding: 1em 2em;
+    padding: 1em 1em;
     margin: 0 15%;
-
+    background: #f1d0b1;
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
   }
 
-  img {
+  .pets > img {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+    border-style: groove;
+  }
+
+  .card > img {
     width: 50%;
     height: auto;
     margin: 0 25%;
