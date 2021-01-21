@@ -20,24 +20,19 @@ a {
 a:hover {
   color: #719cff;
 }
-
 /* Section Styles */
-
-.main-nav {
-  width: 100%;
-  background: #4f6a8f;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-}
 .nav {
   display: flex;
   justify-content: space-around;
+  background: #4f6a8f;
   font-weight: 700;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  margin: auto;
+  padding: 10px;
+  min-width: 100%;
+  min-height: 40px;
+  position: fixed;
+  text-align: center;
 }
 
 .nav .name {
@@ -73,7 +68,7 @@ header #about-header {
 
 header #experience-header {
   text-align: center;
-  background: url('images/boy.jpg') no-repeat top center ;
+  background: url('images/workingboy.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -87,19 +82,23 @@ header .profile-image {
   height: 150px;
   margin: 50px 25% 0;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 7px dotted #f1d0b1;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(10deg);
+  border-color: #4f6a8f;
 }
 .tag {
   background-color: #d1d9f3;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: table;
   margin: 10px auto;
+  border-style: inset;
+  border-width: 5px;  
+  
 } 
 .location {
   background-color: #222;
@@ -156,6 +155,7 @@ ul.skills {
   grid-gap: 1em;
   text-align: justify;
   padding: 1em 2em;
+  
 }
 
 .pets p {
@@ -259,8 +259,17 @@ a.social:hover {
   }
 
   .nav {
-    max-width: 1200px;
-    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    background: #4f6a8f;
+    font-weight: 700;
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+    min-width: 100%;
+    min-height: 40px;
+    position: fixed;
+    text-align: center;
   }
 
 
@@ -275,11 +284,17 @@ a.social:hover {
   .about {
     text-align: center;
     margin: 0 35%;
+    border: 4px solid #ccc;
+    border-radius: 6px;
   } 
+
+  .about:hover {
+    border-color: #4f6a8f;
+  }
 
   .pets {
     display:grid;
-    grid-template-columns: .5fr .5fr;
+    grid-template-columns: .5fr .45fr;
     grid-template-rows: .5fr .5fr;
     grid-gap: 1em;
     text-align: justify;
@@ -287,7 +302,7 @@ a.social:hover {
     
   }
 
-  .pets > p:hover {
+  .pets:hover {
     border-color: #4f6a8f;
   }
 
@@ -306,9 +321,13 @@ a.social:hover {
     width: 50%;
     height: auto;
     margin: 0 25%;
-    border-style: groove;
+    border: 4px solid #ccc;
+    border-radius: 6px;
   }
-
+  .pets > img:hover {
+    border-color: #4f6a8f;
+    border-width: 5px;
+  }
   .card > img {
     width: 50%;
     height: auto;
