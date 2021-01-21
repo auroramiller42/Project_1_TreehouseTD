@@ -57,8 +57,8 @@ a:hover {
 
 #main-header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
+  background: url('images/pdxweird_50.jpg') no-repeat top center;
+  background-size: 100% 100%;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -70,6 +70,15 @@ header #about-header {
   overflow: hidden;
   padding-top: 60px;
 }
+
+header #experience-header {
+  text-align: center;
+  background: url('images/boy.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
@@ -126,6 +135,35 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.about {
+  text-align: center;
+  margin: 0 15%;
+} 
+
+.pets {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  text-align: justify;
+  padding: 1em 2em;
+}
+
+.pets p {
+  background-color:aliceblue;
+  border-style: dotted;
+  padding: 1em 2em;
+  margin: 0 15%;
+
+}
+
+img {
+  width: 70%;
+  height: auto;
+  margin: 0 25% 0 15%;
+  border-style: groove;
 }
 
 footer {
@@ -206,6 +244,11 @@ a.social:hover {
   }
 
   .about {
+    text-align: center;
+    margin: 0 15%;
+  } 
+
+  .pets {
     display:grid;
     grid-template-columns: .5fr .5fr;
     grid-template-rows: .5fr .5fr .5fr .5fr;
@@ -214,7 +257,7 @@ a.social:hover {
     padding: 1em 2em;
   }
 
-  .about p {
+  .pets p {
     background-color:aliceblue;
     border-style: dotted;
     padding: 1em 2em;
@@ -222,7 +265,7 @@ a.social:hover {
 
   }
 
-    img {
+  img {
     width: 50%;
     height: auto;
     margin: 0 25%;
