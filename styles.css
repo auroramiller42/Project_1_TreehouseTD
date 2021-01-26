@@ -273,14 +273,14 @@ a.social:hover {
   nav .name {
     color:#d99477;
     margin-right: 60em;
-}
+  }
 
-nav li {
-  display: inline;
-  list-style: none;
-  text-align: right;
-  padding: 0 1em;
-}
+  nav li {
+    display: inline;
+    list-style: none;
+    text-align: right;
+    padding: 0 1em;
+  }
 
   main {
     padding-top: 20px;
